@@ -1,0 +1,579 @@
+/**
+ *
+ */
+
+h1 {
+	padding: 80px 0 40px;
+
+	font-family: 'RockwellRegular';
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 48px;
+	color: #00476f;
+
+	text-transform: uppercase;
+}
+	.search h1 {
+		padding: 60px 0;
+	}
+
+blockquote{
+	margin: 15px 25px;
+	padding: 10px 25px 10px 38px;
+	border-left: 1px solid #00476f;
+	background: transparent url(../img/quotes.png) no-repeat 9px 5px;
+	font-style: italic;
+	color: #666666;
+}
+
+/* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
+.slidey {
+	overflow: scroll;
+	padding: 120px 20px;
+
+	background: #fefefe;
+	border-left: 1px solid #47677e;
+	height: 100%;
+	width: 245px;
+	right: 0;
+	position: fixed;
+}
+	.js-enabled .slidey {
+		-webkit-transition: right .5s;
+		-moz-transition: right .5s;
+		transition: right .5s;
+	}
+	.slidey b, .slidey label {
+		display: block;
+		font-weight: bold;
+		text-align: left;
+
+		font-size: 18px;
+		color: #00476f;
+		text-transform: uppercase;
+		/*font-weight: 500;*/
+	}
+	.slidey form, .slidey aside {
+		/*float: left;*/
+		/*width: 50%;*/
+		margin-bottom: 20px;
+		width: 205px;
+	}
+
+	.slidey .social_links li{
+		text-align: left;
+		margin: 15px 15px 5px;
+		display: inline-block;
+	}
+
+	.slidey .social_links a{
+		width: 64px;
+		height: 64px;
+	}
+
+	.slidey .twitter{
+		background: url('../img/social/twitter.png') no-repeat;
+	}
+
+	.slidey .twitter:hover{
+		background: url('../img/social/twitter_hover.png') no-repeat;
+	}
+
+	.slidey .facebook{
+		background: url('../img/social/facebook.png') no-repeat;
+	}
+
+	.slidey .facebook:hover{
+		background: url('../img/social/facebook_hover.png') no-repeat;
+	}
+
+	.slidey .linkedin{
+		background: url('../img/social/linkedin.png') no-repeat;
+	}
+
+	.slidey .linkedin:hover{
+		background: url('../img/social/linkedin_hover.png') no-repeat;
+	}
+
+	.slidey .youtube{
+		background: url('../img/social/youtube.png') no-repeat;
+	}
+
+	.slidey .youtube:hover{
+		background: url('../img/social/youtube_hover.png') no-repeat;
+	}
+
+	.slidey form, .slidey .wrap{
+		width: 205px;
+	}
+		.slidey form{
+			text-align: right;
+		}
+		.slidey form input {
+			padding: 5px;
+			width: 100%;
+			border-radius: 0;
+			border: 1px solid #00476f;
+			font-size: 18px;
+			font-style: italic;
+		}
+		.slidey form p{
+			font-size: 16px;
+			padding-bottom: 0;
+			text-align: left;
+		}
+		.slidey form button{
+			background-color: #52ade1;
+			color: #ffffff;
+			text-transform: uppercase;
+			padding: 10px 13px;
+			border-radius: 5px;
+			border: none;
+			font-size: 14px;
+			font-family: Georgia;
+			font-weight: bold;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+	.slidey li {
+		list-style: none;
+	}
+		.slidey a {
+			display: block;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			color: #52ade1;
+		}
+			/*.slidey a:hover {
+				color: #414b59;
+			}*/
+		.slidey li span {
+			float: right;
+			opacity: .6;
+		}
+
+#top {
+	overflow: hidden;
+	padding: 20px 35px;
+
+	background: #ffffff;
+}
+	#top #logo_container{
+		width: 146px;
+		margin: 0 auto;
+	}
+
+	#top #escape img{
+		opacity: .5;
+	}
+
+	#top #escape img:hover{
+		opacity: 1;
+	}
+
+	#top a {
+		float: left;
+
+		font-size: 13px;
+		font-weight: 500;
+		text-decoration: none;
+
+		color: #8895a7;
+	}
+		#top #logo:hover, #top ul a:hover, #top ul .active a, .posts .items li:first-child h2 a:hover, p a:hover {
+			color: #9cd8fc;
+		}
+	#top ul {
+		list-style: none;
+		float: right;
+	}
+		#top ul li {
+			float: left;
+		}
+		#top ul a {
+			display: inline-block;
+			color: #00476f;
+		}
+		/*#top ul img {
+			display: inline-block;
+			vertical-align: middle;
+
+			position: relative;
+
+			opacity: .5;
+		}
+			#top ul a:hover img {
+				opacity: 1;
+			}
+			#top ul a.active img {
+				opacity: 1;
+			}*/
+	#top .tray .linky{
+		width: 49px;
+		height: 49px;
+		position: relative;
+		background: url('../img/burger.png') no-repeat;
+	}
+
+	#top .tray .linky:hover{
+		background: url('../img/burger_hover.png') no-repeat;
+	}
+
+	#top #escape{
+		width: 49px;
+		height: 49px;
+		position: relative;
+		background: url('../img/back.png') no-repeat;
+		z-index: 1;
+	}
+
+	#top #escape:hover{
+		background: url('../img/back_hover.png') no-repeat;
+	}
+
+	#top #escape + p{
+		position: absolute;
+		margin: 0;
+		padding: 10px 5px 11px 50px;
+		background-color: #ffffff;
+		/*color: #ffffff;*/
+		border-radius: 49px;
+		opacity: 0;
+		z-index: 0;
+		-webkit-transition: padding .5s;
+		-moz-transition: padding .5s;
+		transition: padding .5s;
+		/*-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		transition: opacity 1s;*/
+	}
+
+	#top .tray.active{
+		position: fixed;
+	}
+
+	#top .tray .linky.active{
+		background: url('../img/close.png') no-repeat;
+	}
+
+	#top .tray .linky.active:hover{
+		background: url('../img/close_hover.png') no-repeat;
+	}
+
+	#top #escape:hover + p{
+		padding: 10px 5px 11px 60px;
+		opacity: 1;
+	}
+
+/**
+ *   Index page listing, category listing, search page results
+ */
+.items {
+	list-style: none;
+}
+	.items > li {
+		padding: 70px 0 60px;
+
+		color: #97aec9;
+		background: #3c4552;
+	}
+		.posts .items > li:first-child {
+			background: #fff !important;
+			padding: 50px 0;
+		}
+			.items li h1 a, .posts .items > li:first-child h2 a {
+				color: #00476f;
+			}
+	.items h1 {
+		padding: 0;
+	}
+		.items h1 a {
+			text-decoration: none;
+		}
+	.items h2 {
+		font-size: 32px;
+		line-height: 41px;
+	}
+		.items h2 a {
+			display: block;
+			padding-bottom: 12px;
+
+			color: #fff;
+			color: rgba(176,200,236,.8);
+
+			text-decoration: none;
+		}
+			.items h2 a:hover {
+				color: #fff;
+			}
+
+	.items .data ul{
+		padding: 0px 5px 20px;
+	}
+	.items .data ul li{
+		list-style: none;
+		display: inline-block;
+		margin: 10px 7px;
+		color: #00476f;
+		font-size: 18px;
+	}
+	.items .data ul li a, .items .data ul li p{
+		color: #52ade1;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.items .data ul li .share_buttons{
+		position: fixed;
+		padding: 0;
+		border: 0;
+		background-color: #ffffff;
+		border-radius: 5px;
+		height: 88px;
+		width: 0;
+		overflow: auto;
+		margin-top: -10px;
+		margin-left: -50px;
+		opacity: 0;
+		-webkit-transition: opacity .5s;
+		-moz-transition: opacity .5s;
+		transition: opacity .5s;
+	}
+	.items .data ul li.share:hover .share_buttons{
+		position: absolute;
+		opacity: 1;
+		padding: 5px;
+		border: 1px solid #888888;
+		width: 300px;
+	}
+	.items .data ul li a:hover{
+		text-decoration: underline;
+	}
+	.items .content {
+		padding: 10px 0 0;
+		color: #333333;
+	}
+		.items .content p{
+			padding-bottom: 15px;
+		}
+		.items .content ol, .items .content ul {
+			padding-bottom: 20px;
+		}
+	article{
+		color: #333333;
+	}
+	article .content ol,
+	article .content ul{
+		padding: 20px 30px 20px 50px;
+	}
+/**
+ *   Pagination
+ */
+.pagination {
+	overflow: hidden;
+	padding: 30px 0;
+	margin-bottom: 50px;
+
+	border-top: 1px solid rgba(22,36,54,.1);
+	border-bottom: 1px solid rgba(22,36,54,.1);
+}
+	.pagination:empty {
+		display: none;
+	}
+	.pagination a {
+		float: left;
+		text-decoration: none;
+
+		font-size: 13px;
+		font-weight: 500;
+
+		color: #6f7b8b;
+	}
+		.pagination a:hover {
+			color: #3c4857;
+		}
+	.pagination a.next {
+		float: right;
+	}
+
+/**
+ *   Give some extra space to single-page wrappers
+ */
+.content.wrap {
+	padding-bottom: 50px;
+}
+	.content.wrap ul, .content.wrap ol, .items li ul {
+		padding: 20px 30px 20px 50px;
+	}
+		.content.wrap ul ul, .content.wrap ol ol, .items li ul ul {
+			padding: 0 20px;
+		}
+
+/**
+ *   Footnotes and straplines
+ */
+.footnote, .commentlist time, .items footer {
+	display: block;
+	padding: 5px 0 15px;
+
+	color: #98a2b1;
+	font-size: 14px;
+	font-style: italic;
+	
+	white-space: nowrap;
+}
+	.footnote {
+		padding: 20px 0 40px;
+	}
+
+/**
+ *   Comment form
+ */
+ul.commentlist {
+	margin-bottom: 40px;
+
+	list-style: none;
+	border-top: 1px solid rgba(22,36,54,.1);
+}
+	ul.commentlist .wrap {
+		position: relative;
+	}
+	ul.commentlist li {
+		padding: 40px 0;
+		border-bottom: 1px solid rgba(22,36,54,.1);
+	}
+		ul.commentlist time {
+			font-size: 13px;
+		}
+		ul.commentlist h2 {
+			font-size: 25px;
+			line-height: 33px;
+		}
+		ul.commentlist .counter {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			font-size: 25px;
+			font-weight: 300;
+			color: #cdd2da;
+		}
+
+#comment {
+	overflow: hidden;
+}
+	#comment label[for] {
+		display: none;
+	}
+	#comment p {
+		float: left;
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 10px;
+
+		text-indent: 0;
+	}
+		#comment p + p {
+			margin-right: 0;
+		}
+		#comment p.textarea {
+			float: none;
+			width: 100%;
+		}
+		#comment p.submit {
+			width: 100%;
+			clear: both;
+		}
+		#comment p.submit button{
+			float: right;
+		}
+	#comment input, #comment textarea {
+		width: 100%;
+		padding: 10px 15px;
+
+		font-size: 15px;
+		font-weight: normal;
+
+		border: 1px solid rgba(22,36,54,.2);
+		border-radius: 4px;
+	}
+		#comment input:focus, #comment textarea:focus {
+			outline: none;
+			background: #f7f9fc;
+		}
+		#comment textarea {
+			min-height: 150px;
+			max-height: 800px;
+			resize: vertical;
+		}
+	#comment button {
+		display: inline-block;
+		padding: 9px 18px;
+
+		background: #4e82ce;
+		color: #fff;
+
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+
+		font-size: 13px;
+		font-weight: 500;
+	}
+		#comment button:hover {
+			background: #3c6eb7;
+		}
+
+section form{
+	max-width: 600px;
+	width: 75%;
+	margin: 0 auto 50px;
+	padding: 0;
+	clear: both;
+}
+
+section form input {
+	padding: 5px;
+	width: 100%;
+	border-radius: 0;
+	border: 1px solid #00476f;
+	font-size: 18px;
+	font-style: italic;
+}
+section form p{
+	padding-bottom: 0;
+	font-size: 18px;
+}
+section form button{
+	background-color: #52ade1;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 10px 13px;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+	font-family: Georgia;
+	font-weight: bold;
+	margin-top: 10px;
+	float: right;
+}
+
+/**
+ *   Footer
+ */
+#bottom {
+	padding: 30px 0 40px;
+}
+	#bottom ul {
+		float: right;
+		list-style: none;
+	}
+		#bottom li {
+			float: left;
+			padding-left: 35px;
+
+			font-size: 14px;
+		}
+		#bottom a {
+			text-decoration: none;
+		}
