@@ -13,7 +13,7 @@
 
 					<div class="data">
 						<ul>
-							<li><a href="<?= base_url('author/' . article_author_username()); ?>"><?php echo article_author('real_name'); ?></a> wrote this <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time></li>
+							<li><?php echo article_author('real_name'); ?> wrote this <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time></li>
 							<li>Category: <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a></li>
 							<li class="share"><p>Share</p>
 								<div class="share_buttons">
